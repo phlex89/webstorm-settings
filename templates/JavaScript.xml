@@ -1,0 +1,116 @@
+<templateSet group="JavaScript">
+  <template name="cll" value="console.log('$SELECTION$');" description="Console log STRING" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cd" value="$log.debug($SELECTION$);" description="Console debug" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cl" value="console.log($SELECTION$);" description="Console log VAR" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="scfunc" value="$scope.$NAME$ = function() {  &#10;    $SELECTION$&#10;};" description="Scope function" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="stm" value="setTimeout( function(){&#10;    $SELECTION$&#10;}, $DURATION$);" description="setTimeout" toReformat="false" toShortenFQNames="true">
+    <variable name="DURATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="atm" value="$timeout( function(){&#10;    $SELECTION$&#10;}, $DURATION$);" description="Angular timeout" toReformat="false" toShortenFQNames="true">
+    <variable name="DURATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="reto" value="return {&#10;    $SELECTION$xx: xx&#10;};" description="Return empty obj" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="apidoc" value="/*&#10;    API: $SELECTION$$api$ - $action$&#10;    NOTE: $note$&#10;    Require:&#10;        $req$&#10;    Returns:&#10;        $ret$&#10;*/" description="Add documentation block for api" toReformat="false" toShortenFQNames="true">
+    <variable name="api" expression="" defaultValue="/" alwaysStopAt="true" />
+    <variable name="action" expression="" defaultValue="POST" alwaysStopAt="true" />
+    <variable name="note" expression="" defaultValue="/" alwaysStopAt="true" />
+    <variable name="req" expression="" defaultValue="/" alwaysStopAt="true" />
+    <variable name="ret" expression="" defaultValue="/" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="apifn" value="function onSuccess($selection$$result$) {&#10;    &#10;}&#10;function onError(err) {&#10;    $log.debug(err);&#10;}" description="create success and error functions for api" toReformat="false" toShortenFQNames="true">
+    <variable name="selection" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="result" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="createprops" value="var props = {&#10;    data: {},&#10;    $d1$: $selection$&#10;};&#10;&#10;return {&#10;    props: props,&#10;    $fn1$: $fn1$&#10;};" description="create props object" toReformat="false" toShortenFQNames="true">
+    <variable name="d1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="selection" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="fn1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tcl" value="this.$log.log($SELECTION$);" description="THIS Console log VAR" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tcll" value="this.$log.log('$SELECTION$');" description="TIHS Console log STRING" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="acl" value="$log.log($SELECTION$);" description="Angular Service log" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="acll" value="$log.log('$SELECTION$');" description="Angular Service log string" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="tacll" value="this.$log.log('$SELECTION$');" description="Angular Service log string with THIS" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="tacl" value="this.$log.log($SELECTION$);" description="Angular Service log string with THIS" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="tryc" value="try {&#10;    $SELECTION$&#10;} catch (err) {&#10;    console.log(err);&#10;}" description="Catch" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="nodefn" value="function (req, res, next) {&#10;    $SELECTION$&#10;}" description="Generic node function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cn" value="className=&quot;$SELECTION$&quot;" description="React classname" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>

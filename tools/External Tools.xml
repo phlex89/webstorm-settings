@@ -1,0 +1,16 @@
+<toolSet name="External Tools">
+  <tool name="DeployD Runner" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" />
+      <option name="PARAMETERS" value="dashboard" />
+      <option name="WORKING_DIRECTORY" value="D:/Lavoro/Reply/Ulixe/corso-angular/esercizi/sportStore/webservice/sportstore" />
+    </exec>
+  </tool>
+  <tool name="Prettify" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="prettier" />
+      <option name="PARAMETERS" value="--write $FilePathRelativeToProjectRoot$/src/**/*.js" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>
