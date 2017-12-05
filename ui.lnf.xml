@@ -5,7 +5,6 @@
     <option name="MAX_LOOKUP_LIST_HEIGHT" value="13" />
     <option name="SHOW_MEMORY_INDICATOR" value="true" />
     <option name="SHOW_STATUS_BAR" value="false" />
-    <option name="smoothScrolling" value="true" />
     <option name="WIDESCREEN_SUPPORT" value="true" />
   </component>
 </application>
