@@ -1,10 +1,9 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <removed_mapping ext="jsx" type="JSX Harmony" />
       <mapping pattern=".editorconfig" type="Native" />
       <mapping pattern=".env" type="PLAIN_TEXT" />
-      <mapping ext="jsx" type="PLAIN_TEXT" />
+      <mapping pattern="DatasetListSidebar.jsx" type="PLAIN_TEXT" />
       <mapping ext="service" type="TypeScript" />
     </extensionMap>
   </component>
