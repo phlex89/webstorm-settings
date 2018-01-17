@@ -8,6 +8,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl n" />
     <keyboard-shortcut first-keystroke="ctrl alt a" />
   </action>
+  <action id="Graph.ActualZoom">
+    <keyboard-shortcut first-keystroke="ctrl numpad0" />
+  </action>
   <action id="IntroduceField" />
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="ctrl alt l" />
@@ -23,5 +26,8 @@
   </action>
   <action id="Vcs.Log.GoToRef">
     <keyboard-shortcut first-keystroke="ctrl f" />
+  </action>
+  <action id="ZoomCurrentWindow">
+    <keyboard-shortcut first-keystroke="shift ctrl numpad0" />
   </action>
 </keymap>
