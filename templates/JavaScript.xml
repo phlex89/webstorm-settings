@@ -118,4 +118,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="cmps" value="const Composed$VAR$ = &#10;&#10;Composed$VAR$.displayName = '$VAR$';&#10;&#10;export default Composed$VAR$;&#10;" description="generate `const Composed{compName} =` placeholder" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
